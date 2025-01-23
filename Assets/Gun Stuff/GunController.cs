@@ -48,7 +48,7 @@ public class Gun : MonoBehaviour
         if (bulletRb != null)
         {
             animatorForTrigger.SetTrigger("Shoot");
-            bulletRb.velocity = bulletLaunch.transform.right * 10f;
+            bulletRb.velocity = bulletLaunch.transform.right * 25f;
             Debug.Log("shoot");
             canShoot = false;
             StartCoroutine(CoolDown());
@@ -58,7 +58,7 @@ public class Gun : MonoBehaviour
     IEnumerator CoolDown()
     {
         coolDown = true;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
         coolDown = false;
     }
 }
