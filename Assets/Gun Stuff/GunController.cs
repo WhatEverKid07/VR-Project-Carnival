@@ -1,25 +1,64 @@
 using System.Collections;
-using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 
-public class GunController : MonoBehaviour
+public class Gun : MonoBehaviour
 {
     [SerializeField] public Transform bulletLaunch;
     [SerializeField] public GameObject bulletPrefab;
-    [SerializeField] public Rigidbody bulletPrefabRb;
     [SerializeField] public GameObject impactParticle;
 
+    [SerializeField] public Animator animatorForReload;
+    [SerializeField] public Animator animatorForTrigger;
+
+    private bool canShoot;
+    private bool coolDown;
+
+    private void Start()
+    {
+        canShoot = true;
+        coolDown = false;
+    }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && canShoot && !coolDown)
         {
             Shoot();
-            Debug.Log("shoot");
+        }
+
+        if (Input.GetKeyDown(KeyCode.R) && !canShoot && !coolDown)
+        {
+            Reload();
         }
     }
+
+    public void Reload()
+    {
+        animatorForReload.SetTrigger("Reload");
+        Debug.Log("Reload");
+        canShoot = true;
+        StartCoroutine(CoolDown());
+    }
+
     public void Shoot()
     {
-        GameObject bullet = Instantiate(bulletPrefab, bulletLaunch.transform.position, bulletLaunch.transform.rotation);
-        bulletPrefabRb.velocity = bulletLaunch.transform.forward * 10;
+        GameObject bullet = Instantiate(bulletPrefab, bulletLaunch.position, bulletLaunch.rotation);
+
+        Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
+        if (bulletRb != null)
+        {
+            animatorForTrigger.SetTrigger("Shoot");
+            bulletRb.velocity = bulletLaunch.transform.right * 10f;
+            Debug.Log("shoot");
+            canShoot = false;
+            StartCoroutine(CoolDown());
+        }
+    }
+
+    IEnumerator CoolDown()
+    {
+        coolDown = true;
+        yield return new WaitForSeconds(1);
+        coolDown = false;
     }
 }
