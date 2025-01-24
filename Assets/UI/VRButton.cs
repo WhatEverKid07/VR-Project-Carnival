@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class VRButton : MonoBehaviour
 {
@@ -20,6 +21,14 @@ public class VRButton : MonoBehaviour
         {
             onPressed?.Invoke();
             Debug.Log("I have been pressed");
+        }
+
+        if (other.tag == "StartButton" && !_deadTimeActive)
+        {
+            onPressed?.Invoke();
+            Debug.Log("I have been pressed");
+            yield return new WaitForSeconds(1.5);
+            SceneManager.LoadScene("SampleScene");
         }
     }
 
