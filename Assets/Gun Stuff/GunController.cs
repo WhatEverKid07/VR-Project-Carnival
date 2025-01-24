@@ -1,6 +1,8 @@
 using System.Collections;
 using UnityEditor.Animations;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit.Inputs.Readers;
 
 public class Gun : MonoBehaviour
 {
@@ -21,6 +23,7 @@ public class Gun : MonoBehaviour
     }
     private void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Space) && canShoot && !coolDown)
         {
             Shoot();
