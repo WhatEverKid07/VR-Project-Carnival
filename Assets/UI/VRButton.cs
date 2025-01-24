@@ -27,14 +27,15 @@ public class VRButton : MonoBehaviour
         {
             onPressed?.Invoke();
             Debug.Log("I have been pressed");
-            StartCoroutine(LoadSceneAfterDelay());  // Start the coroutine here
+            StartCoroutine(ExecuteAfterDelay());  // Start the coroutine here
+            //SceneManager.LoadScene("SampleScene");
         }
     }
 
-    // Coroutine that waits for 1.5 seconds before loading the scene
-    private IEnumerator LoadSceneAfterDelay()
+    // Coroutine that waits (x) seconds before executing
+    private IEnumerator ExecuteAfterDelay()
     {
-        yield return new WaitForSeconds(1.5f);  // Wait for 1.5 seconds
+        yield return new WaitForSeconds(1.5f);  // Wait for (x) seconds
         SceneManager.LoadScene("SampleScene");  // Load the scene after the delay
     }
 
@@ -46,7 +47,7 @@ public class VRButton : MonoBehaviour
         {
             onReleased?.Invoke();
             Debug.Log("I have been released");
-            StartCoroutine(WaitForDeadTime());
+            //StartCoroutine(WaitForDeadTime());
         }
     }
 
