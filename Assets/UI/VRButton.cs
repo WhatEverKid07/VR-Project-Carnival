@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -27,16 +28,35 @@ public class VRButton : MonoBehaviour
         {
             onPressed?.Invoke();
             Debug.Log("I have been pressed");
-            StartCoroutine(ExecuteAfterDelay());  // Start the coroutine here
-            //SceneManager.LoadScene("SampleScene");
+            StartCoroutine(StartGameDelay());
+        }
+
+        if (other.tag == "OptionsButton" && !_deadTimeActive)
+        {
+            onPressed?.Invoke();
+            Debug.Log("I have been pressed");
+            StartCoroutine(OptionsDelay());
+        }
+
+        if (other.tag == "QuitButton" && !_deadTimeActive)
+        {
+            onPressed?.Invoke();
+            Debug.Log("I have been pressed");
+            Application.Quit();
         }
     }
 
     // Coroutine that waits (x) seconds before executing
-    private IEnumerator ExecuteAfterDelay()
+    private IEnumerator StartGameDelay()
     {
         yield return new WaitForSeconds(1.5f);  // Wait for (x) seconds
         SceneManager.LoadScene("SampleScene");  // Load the scene after the delay
+    }
+
+    private IEnumerator OptionsDelay()
+    {
+        yield return new WaitForSeconds(1.5f);  // Wait for (x) seconds
+        SceneManager.LoadScene("OptionScene");  // Load the scene after the delay
     }
 
     // Checks if the current collider exiting is the Button and sets off OnReleased event. 

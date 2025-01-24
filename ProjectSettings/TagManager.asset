@@ -9,6 +9,7 @@ TagManager:
   - Duck
   - StartButton
   - QuitButton
+  - OptionsButton
   layers:
   - Default
   - TransparentFX
