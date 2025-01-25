@@ -10,6 +10,7 @@ TagManager:
   - StartButton
   - QuitButton
   - OptionsButton
+  - Bomb
   layers:
   - Default
   - TransparentFX

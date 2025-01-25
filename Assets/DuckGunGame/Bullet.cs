@@ -16,16 +16,24 @@ public class Bullet : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
 
+        Animator animator = collision.gameObject.GetComponent<Animator>();
+
         if (collision.gameObject.CompareTag("Duck"))
         {
             localParticles = Instantiate(collisionParticles, gameObject.transform.localPosition, gameObject.transform.localRotation);
             meshRenderer.enabled = false;
             StartCoroutine(Destroy());
 
+            animator.SetTrigger("Fall");
             //+ points on the ui thing
         }
         else if (collision.gameObject.CompareTag("Bomb"))
         {
+            localParticles = Instantiate(collisionParticles, gameObject.transform.localPosition, gameObject.transform.localRotation);
+            meshRenderer.enabled = false;
+            StartCoroutine(Destroy());
+
+            animator.SetTrigger("Fall");
             //- points on the ui thing
         }
     }
