@@ -6,8 +6,10 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [SerializeField] GameObject collisionParticles;
+
     private GameObject localParticles;
     private MeshRenderer meshRenderer;
+    private PointsLink pointsLink;
 
     private void Start()
     {
@@ -15,24 +17,22 @@ public class Bullet : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-
+        pointsLink = collision.gameObject.GetComponent<PointsLink>();
         Animator animator = collision.gameObject.GetComponent<Animator>();
+
+        localParticles = Instantiate(collisionParticles, gameObject.transform.localPosition, gameObject.transform.localRotation);
+        meshRenderer.enabled = false;
+        StartCoroutine(Destroy());
 
         if (collision.gameObject.CompareTag("Duck"))
         {
-            localParticles = Instantiate(collisionParticles, gameObject.transform.localPosition, gameObject.transform.localRotation);
-            meshRenderer.enabled = false;
-            StartCoroutine(Destroy());
-
             animator.SetTrigger("Fall");
+            pointsLink.AddPointsLink();
             //+ points on the ui thing
         }
         else if (collision.gameObject.CompareTag("Bomb"))
         {
-            localParticles = Instantiate(collisionParticles, gameObject.transform.localPosition, gameObject.transform.localRotation);
-            meshRenderer.enabled = false;
-            StartCoroutine(Destroy());
-
+            pointsLink.RemovePointsLink();
             animator.SetTrigger("Fall");
             //- points on the ui thing
         }

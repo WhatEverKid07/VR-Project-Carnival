@@ -1,0 +1,62 @@
+using System.Collections;
+using UnityEngine;
+using TMPro;
+
+public class CountdownTimer : MonoBehaviour
+{
+    public int minutes;
+    public int seconds;
+    public TMP_Text timerText;
+    private float totalTimeInSeconds;
+    private bool isRunning = false;
+
+    private void Start()
+    {
+        SetTimer(minutes, seconds);
+        StartTimer();
+    }
+
+    public void SetTimer(int minutes, int seconds)
+    {
+        totalTimeInSeconds = minutes * 60 + seconds;
+        UpdateTimerText();
+    }
+    public void StartTimer()
+    {
+        if (!isRunning)
+        {
+            StartCoroutine(TimerCountdown());
+        }
+    }
+    public void StopTimer()
+    {
+        isRunning = false;
+        StopAllCoroutines();
+    }
+
+    private IEnumerator TimerCountdown()
+    {
+        isRunning = true;
+
+        while (totalTimeInSeconds > 0)
+        {
+            yield return new WaitForSeconds(1);
+            totalTimeInSeconds--;
+            UpdateTimerText();
+        }
+
+        isRunning = false;
+        OnTimerEnd();
+    }
+    private void UpdateTimerText()
+    {
+        int remainingMinutes = Mathf.FloorToInt(totalTimeInSeconds / 60);
+        int remainingSeconds = Mathf.FloorToInt(totalTimeInSeconds % 60);
+        timerText.text = string.Format("{0}\n{1:D2}:{2:D2}", "Time left", remainingMinutes, remainingSeconds);
+    }
+    private void OnTimerEnd()
+    {
+        Debug.Log("Timer has ended!");
+        //end game and anything else
+    }
+}

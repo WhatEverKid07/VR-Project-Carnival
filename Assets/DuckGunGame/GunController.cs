@@ -75,7 +75,7 @@ public class Gun : MonoBehaviour
     }
     IEnumerator SmokeRemove(GameObject Smoke)
     {
-        yield return new WaitForSeconds(5f); // Wait for 5 seconds
+        yield return new WaitForSeconds(2f); // Wait for 5 seconds
         Destroy(Smoke); // Destroy the smoke particles
     }
     IEnumerator CoolDown()
