@@ -29,19 +29,8 @@
                 },
                 {
                     "name": "",
-                    "id": "49335229-087a-4d68-acdd-9cc2b07160cd",
-                    "path": "*/trigger/right",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Shoot",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "a0fca55c-cb50-412f-9022-178c83e5f2c7",
-                    "path": "<XRController>{RightHand}/{PrimaryButton}",
+                    "id": "c7e4dc1e-fcd2-492f-ba46-9e3fc20391dc",
+                    "path": "<OculusTouchController>{RightHand}/triggerPressed",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -79,19 +68,8 @@
                 },
                 {
                     "name": "",
-                    "id": "859c031a-62dc-4781-9de0-067341ed82a2",
-                    "path": "*/trigger/left",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Reload",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "a22e21e2-44ab-4aa0-88d8-afe2c2718118",
-                    "path": "<XRController>{LeftHand}/{PrimaryButton}",
+                    "id": "b0bd31d3-a4bb-4c34-8742-00d3776f4596",
+                    "path": "<OculusTouchController>{LeftHand}/triggerPressed",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

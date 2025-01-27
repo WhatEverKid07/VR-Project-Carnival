@@ -9,14 +9,17 @@ public class Bullet : MonoBehaviour
 
     private GameObject localParticles;
     private MeshRenderer meshRenderer;
+    private BoxCollider boxCollider;
     private PointsLink pointsLink;
 
     private void Start()
     {
+        boxCollider = GetComponent<BoxCollider>();
         meshRenderer = GetComponent<MeshRenderer>();
     }
     private void OnCollisionEnter(Collision collision)
     {
+        boxCollider.enabled = false;
         pointsLink = collision.gameObject.GetComponent<PointsLink>();
         Animator animator = collision.gameObject.GetComponent<Animator>();
 
