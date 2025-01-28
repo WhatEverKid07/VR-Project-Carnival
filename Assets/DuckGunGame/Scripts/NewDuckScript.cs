@@ -5,7 +5,7 @@ using UnityEngine;
 public class NewDuckScript : MonoBehaviour
 {
     public List<GameObject> duckModels = new List<GameObject>(); // List of all available ducks
-    private List<GameObject> selectedDucks = new List<GameObject>(); // List of selected ducks
+    public List<GameObject> selectedDucks = new List<GameObject>(); // List of selected ducks
 
     public int initialSelectionCount = 3; // Number of ducks to select at the beginning
     public List<GameObject> currentPersons = new List<GameObject>(); // The currently active ducks
@@ -35,39 +35,6 @@ public class NewDuckScript : MonoBehaviour
 
         return initiallySelected;
     }
-    private void Update()
-    {
-        if (currentPersons.Count < initialSelectionCount)
-        {
-            GameObject selectedDuck = duckModels[0];
-            currentPersons.Add(selectedDuck);
-            selectedDuck.SetActive(true);
-            ShuffleArray(duckModels);
-        }
-    }
-
-    private GameObject SelectRandomPerson()
-    {
-        if (duckModels.Count == 0)
-        {
-            // Handle the case where no ducks are left to select
-            AllDucksSelected();
-            return null;
-        }
-
-        // Select a random duck
-        int randomIndex = Random.Range(0, duckModels.Count);
-        GameObject selectedDuck = duckModels[randomIndex];
-
-        // Remove the selected duck from the available list
-        duckModels.RemoveAt(randomIndex);
-
-        // Add it to the list of selected ducks
-        selectedDucks.Add(selectedDuck);
-
-        Beginning(); // Start game logic
-        return selectedDuck;
-    }
 
     private void ShuffleArray(List<GameObject> list)
     {
@@ -82,14 +49,49 @@ public class NewDuckScript : MonoBehaviour
 
     public void Beginning()
     {
-        // Placeholder for game start logic
         Debug.Log("Game started with new ducks!");
     }
-
-    private void AllDucksSelected()
+    private void Update()
     {
-        // Placeholder for handling all ducks selected
-        Debug.Log("All ducks have been selected!");
+        if (currentPersons.Count < initialSelectionCount && duckModels.Count >= 1)
+        {
+            AddNewDuckToKeepUpdated();
+        }
+    }
+    public void AddNewDuckToKeepUpdated()
+    {
+        GameObject selectedDuck = duckModels[0];
+        currentPersons.Add(selectedDuck);
+        selectedDuck.SetActive(true);
+        ShuffleArray(duckModels);
+    }
+
+    public void RemoveDuck(GameObject duck)
+    {
+        /*
+        selectedDucks.Remove(duck);
+        duckModels.Remove(duck);
+        currentPersons.Remove(duck);
+        */
+        
+        // Remove the duck from duckModels
+        if (duckModels.Contains(duck))
+        {
+            duckModels.Remove(duck);
+            Debug.Log($"{duck.name} removed from duckModels.");
+        }
+        // Remove the duck from selectedDucks
+        if (selectedDucks.Contains(duck))
+        {
+            selectedDucks.Remove(duck);
+            Debug.Log($"{duck.name} removed from selectedDucks.");
+        }
+        // Remove the duck from currentPerson
+        if (currentPersons.Contains(duck))
+        {
+            currentPersons.Remove(duck);
+            Debug.Log($"{duck.name} removed from currentDucks.");
+        }
     }
 
     private void Start()
@@ -109,6 +111,7 @@ public class NewDuckScript : MonoBehaviour
         {
             duck.SetActive(true);
             currentPersons.Add(duck); // Add to the list of currently active ducks
+            duckModels.Remove(duck);
         }
 
         if (currentPersons.Count == 0)

@@ -12,12 +12,12 @@ public class HoldingGunTrigger : MonoBehaviour
         if (other.CompareTag("LeftController") && leftController)
         {
             gunController.leftHandOn = true;
-            Debug.Log("Left hand on");
+            //Debug.Log("Left hand on");
         }
         else if (other.CompareTag("RightController") && rightController)
         {
             gunController.rightHandOn = true;
-            Debug.Log("Right hand on");
+            //Debug.Log("Right hand on");
         }
     }
     private void OnTriggerExit(Collider other)
@@ -25,12 +25,12 @@ public class HoldingGunTrigger : MonoBehaviour
         if (other.CompareTag("LeftController") && leftController)
         {
             gunController.leftHandOn = false;
-            Debug.Log("Left hand off");
+            //Debug.Log("Left hand off");
         }
         else if (other.CompareTag("RightController") && rightController)
         {
             gunController.rightHandOn = false;
-            Debug.Log("Left hand off");
+            //Debug.Log("Left hand off");
         }
     }
 }

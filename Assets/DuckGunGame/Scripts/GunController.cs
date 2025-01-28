@@ -50,7 +50,7 @@ public class GunController : MonoBehaviour
         if (!canShoot && !shootCoolDown && leftHandOn && rightHandOn)
         {
             animatorForReload.SetTrigger("Reload");
-            Debug.Log("Reload");
+            //Debug.Log("Reload");
             canShoot = true;
             StartCoroutine(ReloadCoolDown());
         }
@@ -75,7 +75,7 @@ public class GunController : MonoBehaviour
 
                 bulletRb.velocity = bulletDirection * bulletSpeed;
 
-                Debug.Log("Shoot");
+                //Debug.Log("Shoot");
                 canShoot = false;
                 StartCoroutine(ShootCoolDown());
             }

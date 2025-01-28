@@ -31,13 +31,12 @@ public class Bullet : MonoBehaviour
         {
             animator.SetTrigger("Fall");
             pointsLink.AddPointsLink();
-            //+ points on the ui thing
+            pointsLink.DuckDie();
         }
         else if (collision.gameObject.CompareTag("Bomb"))
         {
-            pointsLink.RemovePointsLink();
             animator.SetTrigger("Fall");
-            //- points on the ui thing
+            pointsLink.RemovePointsLink();
         }
     }
 
