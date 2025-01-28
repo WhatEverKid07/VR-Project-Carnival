@@ -3,7 +3,7 @@ using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Gun : MonoBehaviour
+public class GunController : MonoBehaviour
 {
     [SerializeField] private Transform bulletLaunch;
     [SerializeField] private Transform smokeParticleLocation;
@@ -20,7 +20,11 @@ public class Gun : MonoBehaviour
     [SerializeField] private float bulletSpeed;
 
     private bool canShoot;
-    private bool coolDown;
+    private bool reloadCoolDown;
+    private bool shootCoolDown;
+
+    [HideInInspector] public bool leftHandOn = false;
+    [HideInInspector] public bool rightHandOn = false;
 
     private InputAction shootInput;
     private InputAction reloadInput;
@@ -37,23 +41,24 @@ public class Gun : MonoBehaviour
         reloadInput.performed += ctx => Reload();
 
         canShoot = true;
-        coolDown = false;
+        shootCoolDown = false;
+        reloadCoolDown = false;
     }
 
     public void Reload()
     {
-        if (!canShoot && !coolDown)
+        if (!canShoot && !shootCoolDown && leftHandOn && rightHandOn)
         {
             animatorForReload.SetTrigger("Reload");
             Debug.Log("Reload");
             canShoot = true;
-            StartCoroutine(CoolDown());
+            StartCoroutine(ReloadCoolDown());
         }
     }
 
     public void Shoot()
     {
-        if (canShoot && !coolDown)
+        if (canShoot && !reloadCoolDown && leftHandOn && rightHandOn)
         {
             GameObject bullet = Instantiate(bulletPrefab, bulletLaunch.position, bulletLaunch.rotation);
             GameObject smokeParticles = Instantiate(gunSmokeParticles, smokeParticleLocation.position, smokeParticleLocation.rotation);
@@ -72,7 +77,7 @@ public class Gun : MonoBehaviour
 
                 Debug.Log("Shoot");
                 canShoot = false;
-                StartCoroutine(CoolDown());
+                StartCoroutine(ShootCoolDown());
             }
         }
     }
@@ -96,10 +101,16 @@ public class Gun : MonoBehaviour
         Destroy(Smoke);
     }
 
-    IEnumerator CoolDown()
+    IEnumerator ReloadCoolDown()
     {
-        coolDown = true;
+        reloadCoolDown = true;
         yield return new WaitForSeconds(0.5f);
-        coolDown = false;
+        reloadCoolDown = false;
+    }
+    IEnumerator ShootCoolDown()
+    {
+        shootCoolDown = true;
+        yield return new WaitForSeconds(0.1f);
+        shootCoolDown = false;
     }
 }

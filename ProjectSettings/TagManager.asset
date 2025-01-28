@@ -11,6 +11,8 @@ TagManager:
   - QuitButton
   - OptionsButton
   - Bomb
+  - LeftController
+  - RightController
   layers:
   - Default
   - TransparentFX
