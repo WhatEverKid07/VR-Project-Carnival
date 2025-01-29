@@ -1,45 +1,48 @@
 using UnityEngine;
-using UnityEngine.Rendering;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class DartThrow : MonoBehaviour
 {
-    private Rigidbody rb;
     private XRGrabInteractable grabInteractable;
+    private Rigidbody rb;
+    private Vector3 lastPosition;
+    private Vector3 throwVelocity;
+    private bool isGrabbed = false;
+    private float velocityMultiplier = 8000000f; // Adjust if needed
 
-    public float throwForce = 15f; // Adjust to control speed
-    public bool canThrow;
-
-    private void Awake()
+    void Start()
     {
-        canThrow = false;
         rb = GetComponent<Rigidbody>();
         grabInteractable = GetComponent<XRGrabInteractable>();
-        //rb.isKinematic = true;
+
+        // Listen for grab and release events
+        grabInteractable.selectEntered.AddListener(OnGrab);
+        grabInteractable.selectExited.AddListener(OnRelease);
     }
-    private void OnTriggerExit(Collider other)
+
+    void FixedUpdate()
     {
-        if (other.CompareTag("LeftController") || other.CompareTag("RightController"))
+        if (isGrabbed)
         {
-            canThrow = true;
+            // Calculate velocity while held
+            throwVelocity = (transform.position - lastPosition) / Time.fixedDeltaTime;
+            lastPosition = transform.position;
         }
     }
-    private void Update()
+
+    private void OnGrab(SelectEnterEventArgs args)
     {
-        if (canThrow)
-        {
-            OnThrow();
-        }
+        isGrabbed = true;
+        rb.isKinematic = true; // Disable physics while holding
     }
 
-
-    private void OnThrow()
+    private void OnRelease(SelectExitEventArgs args)
     {
-        //rb.isKinematic = false;
-        //rb.useGravity = true;
+        isGrabbed = false;
+        rb.isKinematic = false; // Enable physics
+        rb.velocity = throwVelocity * velocityMultiplier; // Apply velocity on release
 
-        // Apply velocity in the correct forward direction
-        rb.velocity = -transform.forward * throwForce;
+        Debug.Log("Dart Released! Velocity: " + rb.velocity);
     }
 }
