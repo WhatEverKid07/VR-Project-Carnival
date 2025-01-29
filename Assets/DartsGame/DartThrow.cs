@@ -37,7 +37,7 @@ public class DartThrow : MonoBehaviour
     private void OnThrow()
     {
         //rb.isKinematic = false;
-        rb.useGravity = true;
+        //rb.useGravity = true;
 
         // Apply velocity in the correct forward direction
         rb.velocity = -transform.forward * throwForce;
