@@ -13,7 +13,8 @@ public class DuckMoving : MonoBehaviour
 
     void Start()
     {
-        moveSpeed = Random.Range(0.01f, 0.2f);
+        moveSpeed = Random.Range(0.01f, 0.1f);
+        gameObject.transform.rotation = Quaternion.Euler(0, Random.Range(0, 350), 0);
         // Calculate initial radius and angle based on the duck's starting position
         Vector3 offset = transform.position - centerPoint;
         radius = offset.magnitude; // Distance from center
