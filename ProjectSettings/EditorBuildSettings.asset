@@ -14,6 +14,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/UI/OptionScene.unity
     guid: a51e7717c2471e64daec575b7d771e2b
+  - enabled: 1
+    path: Assets/UI/SelectScene.unity
+    guid: ac2eb6f8701074f4398729d40038142b
+  - enabled: 1
+    path: Assets/DuckFishing/DuckFishing.unity
+    guid: 19d3dccc77f028b46870a0393025aab1
+  - enabled: 1
+    path: Assets/DuckGunGame/DuckGunGame.unity
+    guid: 4e9fef26e6adb88479ad1b9834a32d94
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b564c050d7dc5b44d95bc34a2bf4d892, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}

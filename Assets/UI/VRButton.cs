@@ -44,19 +44,58 @@ public class VRButton : MonoBehaviour
             Debug.Log("I have been pressed");
             Application.Quit();
         }
+
+        if (other.tag == "DuckDuckBombButton" && !_deadTimeActive)
+        {
+            onPressed?.Invoke();
+            Debug.Log("I have been pressed");
+            StartCoroutine(DuckDuckBombDelay());
+        }
+
+        if (other.tag == "DuckFishButton" && !_deadTimeActive)
+        {
+            onPressed?.Invoke();
+            Debug.Log("I have been pressed");
+            StartCoroutine(DuckFishDelay());
+        }
+
+        if (other.tag == "BackButton" && !_deadTimeActive)
+        {
+            onPressed?.Invoke();
+            Debug.Log("I have been pressed");
+            StartCoroutine(BackDelay());
+        }
     }
 
     // Coroutine that waits (x) seconds before executing
     private IEnumerator StartGameDelay()
     {
         yield return new WaitForSeconds(1.5f);  // Wait for (x) seconds
-        SceneManager.LoadScene("SampleScene");  // Load the scene after the delay
+        SceneManager.LoadScene("SelectScene");  // Load the scene after the delay
     }
 
     private IEnumerator OptionsDelay()
     {
         yield return new WaitForSeconds(1.5f);  // Wait for (x) seconds
         SceneManager.LoadScene("OptionScene");  // Load the scene after the delay
+    }
+
+    private IEnumerator DuckDuckBombDelay()
+    {
+        yield return new WaitForSeconds(1.5f);  // Wait for (x) seconds
+        SceneManager.LoadScene("DuckGunGame");  // Load the scene after the delay
+    }
+
+    private IEnumerator DuckFishDelay()
+    {
+        yield return new WaitForSeconds(1.5f);  // Wait for (x) seconds
+        SceneManager.LoadScene("DuckFishing");  // Load the scene after the delay
+    }
+
+    private IEnumerator BackDelay()
+    {
+        yield return new WaitForSeconds(1.5f);  // Wait for (x) seconds
+        SceneManager.LoadScene("MenuScene");  // Load the scene after the delay
     }
 
     // Checks if the current collider exiting is the Button and sets off OnReleased event. 
