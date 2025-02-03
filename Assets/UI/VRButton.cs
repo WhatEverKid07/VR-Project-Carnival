@@ -26,14 +26,14 @@ public class VRButton : MonoBehaviour
 
         if (other.tag == "StartButton" && !_deadTimeActive)
         {
-            onPressed?.Invoke();
+            //onPressed?.Invoke();
             Debug.Log("I have been pressed");
             StartCoroutine(StartGameDelay());
         }
 
         if (other.tag == "OptionsButton" && !_deadTimeActive)
         {
-            onPressed?.Invoke();
+            //onPressed?.Invoke();
             Debug.Log("I have been pressed");
             StartCoroutine(OptionsDelay());
         }
@@ -47,21 +47,21 @@ public class VRButton : MonoBehaviour
 
         if (other.tag == "DuckDuckBombButton" && !_deadTimeActive)
         {
-            onPressed?.Invoke();
+            //onPressed?.Invoke();
             Debug.Log("I have been pressed");
             StartCoroutine(DuckDuckBombDelay());
         }
 
         if (other.tag == "DuckFishButton" && !_deadTimeActive)
         {
-            onPressed?.Invoke();
+            //onPressed?.Invoke();
             Debug.Log("I have been pressed");
             StartCoroutine(DuckFishDelay());
         }
 
         if (other.tag == "BackButton" && !_deadTimeActive)
         {
-            onPressed?.Invoke();
+            //onPressed?.Invoke();
             Debug.Log("I have been pressed");
             StartCoroutine(BackDelay());
         }
@@ -71,31 +71,35 @@ public class VRButton : MonoBehaviour
     private IEnumerator StartGameDelay()
     {
         yield return new WaitForSeconds(1.5f);  // Wait for (x) seconds
-        SceneManager.LoadScene("SelectScene");  // Load the scene after the delay
+        //SceneManager.LoadScene("SelectScene");  // Load the scene after the delay
+        onPressed?.Invoke();
     }
 
     private IEnumerator OptionsDelay()
     {
         yield return new WaitForSeconds(1.5f);  // Wait for (x) seconds
-        SceneManager.LoadScene("OptionScene");  // Load the scene after the delay
+        onPressed?.Invoke();  // Load the scene after the delay
     }
 
     private IEnumerator DuckDuckBombDelay()
     {
         yield return new WaitForSeconds(1.5f);  // Wait for (x) seconds
-        SceneManager.LoadScene("DuckGunGame");  // Load the scene after the delay
+        //SceneManager.LoadScene("DuckGunGame");  // Load the scene after the delay
+        onPressed?.Invoke();
     }
 
     private IEnumerator DuckFishDelay()
     {
         yield return new WaitForSeconds(1.5f);  // Wait for (x) seconds
-        SceneManager.LoadScene("DuckFishing");  // Load the scene after the delay
+        //SceneManager.LoadScene("DuckFishing");  // Load the scene after the delay
+        onPressed?.Invoke();
     }
 
     private IEnumerator BackDelay()
     {
         yield return new WaitForSeconds(1.5f);  // Wait for (x) seconds
-        SceneManager.LoadScene("MenuScene");  // Load the scene after the delay
+        //SceneManager.LoadScene("MenuScene");  // Load the scene after the delay
+        onPressed?.Invoke();
     }
 
     // Checks if the current collider exiting is the Button and sets off OnReleased event. 

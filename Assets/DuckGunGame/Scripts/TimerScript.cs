@@ -4,9 +4,11 @@ using TMPro;
 
 public class CountdownTimer : MonoBehaviour
 {
-    public int minutes;
-    public int seconds;
-    public TMP_Text timerText;
+    [SerializeField] private int minutes;
+    [SerializeField] private int seconds;
+    [SerializeField] private TMP_Text timerText;
+    [SerializeField] private GameObject endCanvas;
+
     private float totalTimeInSeconds;
     private bool isRunning = false;
 
@@ -58,5 +60,6 @@ public class CountdownTimer : MonoBehaviour
     {
         Debug.Log("Timer has ended!");
         //end game and anything else
+        endCanvas.SetActive(true);
     }
 }
