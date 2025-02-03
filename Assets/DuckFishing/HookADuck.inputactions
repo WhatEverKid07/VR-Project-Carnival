@@ -1,0 +1,45 @@
+{
+    "name": "HookADuck",
+    "maps": [
+        {
+            "name": "DropDuck",
+            "id": "c0df45b6-5cc5-4066-96f4-d45f1f33ff4c",
+            "actions": [
+                {
+                    "name": "DropDuck",
+                    "type": "Button",
+                    "id": "52a71766-4381-4151-b705-ebb016996bea",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "55e1cf6e-30c6-4ebc-8717-fced15bbcb5a",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DropDuck",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6c608806-4020-4ff9-b33c-884c3240fb44",
+                    "path": "<OculusTouchController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DropDuck",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

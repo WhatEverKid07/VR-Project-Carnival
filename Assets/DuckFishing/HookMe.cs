@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class HookMe : MonoBehaviour
 {
@@ -6,6 +7,16 @@ public class HookMe : MonoBehaviour
     private GameObject hookedDuck;
     private Rigidbody duckRb;
 
+    [SerializeField] private InputActionAsset dropDuckInputActions;
+    private InputAction dropDuckAction;
+
+
+    private void Start()
+    {
+        dropDuckAction = dropDuckInputActions.FindActionMap("DropDuck").FindAction("DropDuck");
+        dropDuckAction.Enable();
+        dropDuckAction.performed += ctx => ReleaseDuck();
+    }
     private void OnTriggerEnter(Collider other)
     {
         // Ensure only one duck can be hooked at a time
@@ -94,6 +105,7 @@ public class HookMe : MonoBehaviour
         duckTransform.rotation = targetRotation;
     }
 
+    /*
     private void Update()
     {
         if (hookedDuck != null && Input.GetKeyDown(KeyCode.Space))
@@ -101,6 +113,7 @@ public class HookMe : MonoBehaviour
             ReleaseDuck();
         }
     }
+    */
 
     private void ReleaseDuck()
     {

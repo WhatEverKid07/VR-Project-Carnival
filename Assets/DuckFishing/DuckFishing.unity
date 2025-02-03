@@ -10309,6 +10309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d78d051b5ba5ca847ab4d133382905c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dropDuckInputActions: {fileID: -944628639613478452, guid: 094abc26386b2ef45bb4d1096106b0cb, type: 3}
 --- !u!65 &1570887395
 BoxCollider:
   m_ObjectHideFlags: 0
