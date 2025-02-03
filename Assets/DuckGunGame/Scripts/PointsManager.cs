@@ -32,6 +32,6 @@ public class PointsManager : MonoBehaviour
 
     private void UpdatePointsText()
     {
-        pointsText.text = string.Format("{0}\n{1}", "Points", currentPoints);
+        pointsText.text = currentPoints.ToString();
     }
 }

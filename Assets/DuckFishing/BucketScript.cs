@@ -9,6 +9,8 @@ public class BucketScript : MonoBehaviour
     [SerializeField] private int pointsIncrease;
     private int currentPoints;
 
+    private DuckPointed ducMovingScript;
+
     private void Start()
     {
         currentPoints = 0;
@@ -18,12 +20,17 @@ public class BucketScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Duck"))
         {
-            currentPoints += pointsIncrease;
-            UpdatePointsText();
+            ducMovingScript = collision.gameObject.GetComponent<DuckPointed>();
+            if (ducMovingScript.pointed == false)
+            {
+                currentPoints += pointsIncrease;
+                ducMovingScript.pointed = true;
+                UpdatePointsText();
+            }
         }
     }
     private void UpdatePointsText()
     {
-        pointsText.text = string.Format("{0}\n{1}", "Points", currentPoints);
+        pointsText.text = currentPoints.ToString();
     }
 }

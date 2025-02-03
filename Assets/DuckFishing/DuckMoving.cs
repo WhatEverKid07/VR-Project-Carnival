@@ -5,7 +5,7 @@ public class DuckMoving : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 1f;
     [SerializeField] Vector3 centerPoint = Vector3.zero;
-    [SerializeField] float bounceAngleChange = 15f; // Small adjustment on collision
+    [SerializeField] float bounceAngleChange = 15f;
 
     private Rigidbody rb;
     private float radius;
@@ -15,10 +15,9 @@ public class DuckMoving : MonoBehaviour
     {
         moveSpeed = Random.Range(0.01f, 0.1f);
         gameObject.transform.rotation = Quaternion.Euler(0, Random.Range(0, 350), 0);
-        // Calculate initial radius and angle based on the duck's starting position
         Vector3 offset = transform.position - centerPoint;
-        radius = offset.magnitude; // Distance from center
-        startAngle = Mathf.Atan2(offset.z, offset.x); // Convert position to an angle
+        radius = offset.magnitude;
+        startAngle = Mathf.Atan2(offset.z, offset.x);
 
         rb = GetComponent<Rigidbody>() ?? gameObject.AddComponent<Rigidbody>();
 
@@ -30,11 +29,11 @@ public class DuckMoving : MonoBehaviour
         rb.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionY;
     }
 
-    void FixedUpdate() // Use FixedUpdate for physics
+    void FixedUpdate()
     {
         float angle = Time.time * (moveSpeed / radius) + startAngle;
         Vector3 targetPosition = centerPoint + new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * radius;
-        rb.MovePosition(targetPosition); // Smooth physics-based movement
+        rb.MovePosition(targetPosition);
     }
 
     void OnCollisionEnter(Collision collision)

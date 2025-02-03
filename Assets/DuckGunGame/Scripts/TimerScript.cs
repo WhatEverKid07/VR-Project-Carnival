@@ -52,7 +52,7 @@ public class CountdownTimer : MonoBehaviour
     {
         int remainingMinutes = Mathf.FloorToInt(totalTimeInSeconds / 60);
         int remainingSeconds = Mathf.FloorToInt(totalTimeInSeconds % 60);
-        timerText.text = string.Format("{0}\n{1:D2}:{2:D2}", "Time left", remainingMinutes, remainingSeconds);
+        timerText.text = string.Format("{0:D1}:{1:D1}", remainingMinutes, remainingSeconds);
     }
     private void OnTimerEnd()
     {

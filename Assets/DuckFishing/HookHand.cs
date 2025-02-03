@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class HookHand : MonoBehaviour
 {
-    //[SerializeField] private HookMe hookMe;
-    public ConfigurableJoint joint;
     private Rigidbody rb;
 
     private void Start()
