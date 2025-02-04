@@ -8,9 +8,11 @@ public class PointsManager : MonoBehaviour
     [SerializeField] private int duckPoints;
     [SerializeField] private int bombPoints;
 
+    //[SerializeField] private HighScoreKeeper highScoreScript;
+
     public TMP_Text pointsText;
 
-    private int currentPoints;
+    [HideInInspector] public int currentPoints;
 
     private void Start()
     {

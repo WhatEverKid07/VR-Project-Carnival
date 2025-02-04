@@ -12,6 +12,9 @@ public class TimerScriptShooting : MonoBehaviour
     private float totalTimeInSeconds;
     private bool isRunning = false;
 
+    [SerializeField] private DGHighScoreKeeper highScoreScript;
+    [SerializeField] private BucketScript pointsManagerScript;
+
     private void Start()
     {
         SetTimer(minutes, seconds);
@@ -61,5 +64,6 @@ public class TimerScriptShooting : MonoBehaviour
         Debug.Log("Timer has ended!");
         //end game and anything else
         endCanvas.SetActive(true);
+        highScoreScript.SetFinalScore(pointsManagerScript.currentPoints);
     }
 }

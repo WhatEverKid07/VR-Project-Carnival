@@ -7,7 +7,7 @@ public class BucketScript : MonoBehaviour
 {
     [SerializeField] private TMP_Text pointsText;
     [SerializeField] private int pointsIncrease;
-    private int currentPoints;
+    public int currentPoints; // [HideInInspector]
 
     private DuckPointed ducMovingScript;
 
