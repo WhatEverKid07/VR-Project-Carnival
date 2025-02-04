@@ -629,7 +629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1001 &46359154
 PrefabInstance:
@@ -641,15 +641,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2743600815354701411, guid: 0783ee713341e0d4789b5df99faa74d4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -959.474
+      value: -955.964
       objectReference: {fileID: 0}
     - target: {fileID: 2743600815354701411, guid: 0783ee713341e0d4789b5df99faa74d4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -539.312
+      value: -539.315
       objectReference: {fileID: 0}
     - target: {fileID: 2743600815354701411, guid: 0783ee713341e0d4789b5df99faa74d4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.0999
+      value: 3.9599001
       objectReference: {fileID: 0}
     - target: {fileID: 2743600815354701411, guid: 0783ee713341e0d4789b5df99faa74d4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -979,7 +979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &64331650 stripped
 GameObject:
@@ -1101,7 +1101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &67229133 stripped
 Transform:
@@ -1614,7 +1614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1001 &106197131
 PrefabInstance:
@@ -1983,7 +1983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &132626677 stripped
 Transform:
@@ -2219,7 +2219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &143295941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2296,12 +2296,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1545974765}
-  - {fileID: 2010639031}
-  - {fileID: 1045174306}
   - {fileID: 1147467188}
   - {fileID: 1317098093}
   - {fileID: 46359155}
   - {fileID: 1198722963}
+  - {fileID: 235539795}
+  - {fileID: 2107228915}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2874,7 +2874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &214765239 stripped
 Transform:
@@ -3074,6 +3074,81 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 868162933}
   m_SourcePrefab: {fileID: 100100000, guid: 1b333001dbb584b4fb23bd87d74bc5a1, type: 3}
+--- !u!1 &235539794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 235539795}
+  - component: {fileID: 235539797}
+  - component: {fileID: 235539796}
+  m_Layer: 5
+  m_Name: HighScore
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &235539795
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235539794}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 4.138}
+  m_LocalScale: {x: 0.0005187219, y: 0.0005187219, z: 0.0005187219}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 143295944}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -957.0297, y: -538.6276}
+  m_SizeDelta: {x: 1816, y: 679}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &235539796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235539794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: adc160e82b3085543a957557a09f7f14, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &235539797
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235539794}
+  m_CullTransparentMesh: 1
 --- !u!1 &241523055 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1b333001dbb584b4fb23bd87d74bc5a1, type: 3}
@@ -3158,7 +3233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.1
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &242583771 stripped
 GameObject:
@@ -3270,7 +3345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &247233393 stripped
 GameObject:
@@ -3908,7 +3983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &285558836 stripped
 Transform:
@@ -3994,7 +4069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &286264196 stripped
 Transform:
@@ -4849,7 +4924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.1
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &313032111 stripped
 Transform:
@@ -4935,7 +5010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &321498233 stripped
 Transform:
@@ -5039,7 +5114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1001 &328937308
 PrefabInstance:
@@ -5179,7 +5254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &328937312 stripped
 Transform:
@@ -5391,7 +5466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &357218253 stripped
 Transform:
@@ -5495,7 +5570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1001 &377972686
 PrefabInstance:
@@ -5635,7 +5710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.1
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &377972690 stripped
 Transform:
@@ -6009,7 +6084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &400868562 stripped
 Transform:
@@ -6266,7 +6341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &417263309
 GameObject:
@@ -6399,7 +6474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1001 &441087506
 PrefabInstance:
@@ -6736,7 +6811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &464909098 stripped
 Transform:
@@ -6894,7 +6969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1001 &486596817
 PrefabInstance:
@@ -7272,7 +7347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &507108857 stripped
 Transform:
@@ -7565,7 +7640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &523611208 stripped
 Transform:
@@ -7876,7 +7951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1001 &532502268
 PrefabInstance:
@@ -8115,7 +8190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1001 &537830264
 PrefabInstance:
@@ -8341,15 +8416,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ca1a181c62677243bfa4bdc649474a8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.01
+      value: 3.52
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ca1a181c62677243bfa4bdc649474a8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.013
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ca1a181c62677243bfa4bdc649474a8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.35
+      value: 4.21
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ca1a181c62677243bfa4bdc649474a8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8670,7 +8745,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &565064593
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8946,7 +9021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &578781958 stripped
 Transform:
@@ -9050,7 +9125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &595086886 stripped
 GameObject:
@@ -9070,7 +9145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.1
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &595086888 stripped
 Transform:
@@ -9222,7 +9297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &597334160 stripped
 GameObject:
@@ -9496,7 +9571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &630287278 stripped
 Transform:
@@ -9687,7 +9762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &648123107 stripped
 Transform:
@@ -9773,7 +9848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &653911498 stripped
 Transform:
@@ -9958,7 +10033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &672532005 stripped
 Transform:
@@ -10291,7 +10366,7 @@ Transform:
   m_GameObject: {fileID: 690988315}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.00000058114523}
-  m_LocalPosition: {x: 0.43871593, y: 0.31658998, z: 2.5067534}
+  m_LocalPosition: {x: 3.948716, y: 0.31359, z: 5.3667536}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10587,7 +10662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &736983436 stripped
 GameObject:
@@ -10781,7 +10856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &745385923
 GameObject:
@@ -10906,7 +10981,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 745385923}
   m_LocalRotation: {x: 0, y: -0.03310281, z: 0, w: 0.999452}
-  m_LocalPosition: {x: 0, y: 0, z: 1.146}
+  m_LocalPosition: {x: 0, y: 0, z: 4.006}
   m_LocalScale: {x: 0.004734157, y: 0.004734157, z: 0.004734157}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10914,7 +10989,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -3.794, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -958.9875, y: -539.882}
+  m_AnchoredPosition: {x: -955.4775, y: -539.885}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &746864021 stripped
@@ -10983,7 +11058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.1
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &746864025 stripped
 Transform:
@@ -11084,7 +11159,7 @@ Transform:
   m_GameObject: {fileID: 755192565}
   serializedVersion: 2
   m_LocalRotation: {x: 0.00000047662195, y: -0.030036367, z: -0.0000000143224534, w: 0.9995488}
-  m_LocalPosition: {x: -959.308, y: -539.66, z: 1.124}
+  m_LocalPosition: {x: -955.798, y: -539.66296, z: 3.9840002}
   m_LocalScale: {x: 0.05338051, y: 0.05338051, z: 0.05338051}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11427,7 +11502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &809000610 stripped
 Transform:
@@ -11769,7 +11844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &850915895 stripped
 Transform:
@@ -11815,7 +11890,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855211666}
   m_LocalRotation: {x: 0.0000009531516, y: 0.033103555, z: 0.00000003157001, w: 0.999452}
-  m_LocalPosition: {x: 0, y: 0, z: 1.101}
+  m_LocalPosition: {x: 0, y: 0, z: 3.961}
   m_LocalScale: {x: 0.004734157, y: 0.004734157, z: 0.004734157}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11823,7 +11898,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 3.794, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -960.36847, y: -539.8571}
+  m_AnchoredPosition: {x: -956.85846, y: -539.8601}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &855211668
@@ -12289,7 +12364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.1
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1001 &906727405
 PrefabInstance:
@@ -12726,7 +12801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1001 &917427334
 PrefabInstance:
@@ -12893,7 +12968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &931301436 stripped
 Transform:
@@ -13667,7 +13742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &1015277334 stripped
 GameObject:
@@ -13753,7 +13828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.1
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1001 &1025054408
 PrefabInstance:
@@ -13854,140 +13929,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 531577444}
   m_SourcePrefab: {fileID: 100100000, guid: 1b333001dbb584b4fb23bd87d74bc5a1, type: 3}
---- !u!1 &1045174305
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1045174306}
-  - component: {fileID: 1045174308}
-  - component: {fileID: 1045174307}
-  m_Layer: 5
-  m_Name: FinaleScore
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1045174306
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1045174305}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.278}
-  m_LocalScale: {x: 0.0034778772, y: 0.0034778772, z: 0.0034778772}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 143295944}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -959.47253, y: -538.716}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1045174307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1045174305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: FinaleScore
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1045174308
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1045174305}
-  m_CullTransparentMesh: 1
 --- !u!1 &1048196119 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4599738171643778227, guid: 1b333001dbb584b4fb23bd87d74bc5a1, type: 3}
@@ -14108,7 +14049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &1060856830 stripped
 Transform:
@@ -14311,7 +14252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &1082954619 stripped
 GameObject:
@@ -14433,7 +14374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &1092613328 stripped
 Transform:
@@ -14591,7 +14532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &1112701764
 GameObject:
@@ -15094,7 +15035,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1147467187}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.15}
+  m_LocalPosition: {x: 0, y: 0, z: 4.01}
   m_LocalScale: {x: 0.00270588, y: 0.00270588, z: 0.00270588}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15102,7 +15043,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -959.4716, y: -539.1024}
+  m_AnchoredPosition: {x: -955.9616, y: -539.1054}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1147467189
@@ -15406,7 +15347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &1155775736 stripped
 Transform:
@@ -15653,7 +15594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &1197823626 stripped
 Transform:
@@ -15683,15 +15624,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2743600815354701411, guid: 0783ee713341e0d4789b5df99faa74d4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -960.544
+      value: -957.034
       objectReference: {fileID: 0}
     - target: {fileID: 2743600815354701411, guid: 0783ee713341e0d4789b5df99faa74d4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -539.312
+      value: -539.315
       objectReference: {fileID: 0}
     - target: {fileID: 2743600815354701411, guid: 0783ee713341e0d4789b5df99faa74d4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.0999
+      value: 3.9599001
       objectReference: {fileID: 0}
     - target: {fileID: 2743600815354701411, guid: 0783ee713341e0d4789b5df99faa74d4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15913,7 +15854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.1
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &1206842618 stripped
 GameObject:
@@ -15981,7 +15922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.1
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &1206842622 stripped
 Transform:
@@ -16067,7 +16008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &1211344727 stripped
 Transform:
@@ -16588,7 +16529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.1
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &1255342496 stripped
 GameObject:
@@ -16674,7 +16615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &1265698152 stripped
 GameObject:
@@ -16814,7 +16755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1001 &1271056362
 PrefabInstance:
@@ -17057,7 +16998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &1302485543 stripped
 GameObject:
@@ -17395,7 +17336,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317098092}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.15}
+  m_LocalPosition: {x: 0, y: 0, z: 4.01}
   m_LocalScale: {x: 0.00270588, y: 0.00270588, z: 0.00270588}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17403,7 +17344,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -960.5469, y: -539.1024}
+  m_AnchoredPosition: {x: -957.03687, y: -539.1054}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1317098094
@@ -17498,6 +17439,81 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6845723920559425511, guid: 1b333001dbb584b4fb23bd87d74bc5a1, type: 3}
+--- !u!1001 &1322138840
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 78f3ad8ef405fd84fa73306cd6f52049, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 19.517584
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f3ad8ef405fd84fa73306cd6f52049, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 19.517584
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f3ad8ef405fd84fa73306cd6f52049, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 19.517584
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f3ad8ef405fd84fa73306cd6f52049, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.955
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f3ad8ef405fd84fa73306cd6f52049, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.267
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f3ad8ef405fd84fa73306cd6f52049, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.552
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f3ad8ef405fd84fa73306cd6f52049, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f3ad8ef405fd84fa73306cd6f52049, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f3ad8ef405fd84fa73306cd6f52049, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f3ad8ef405fd84fa73306cd6f52049, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f3ad8ef405fd84fa73306cd6f52049, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f3ad8ef405fd84fa73306cd6f52049, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 78f3ad8ef405fd84fa73306cd6f52049, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 78f3ad8ef405fd84fa73306cd6f52049, type: 3}
+      propertyPath: m_Name
+      value: Bucket
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 78f3ad8ef405fd84fa73306cd6f52049, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1605073234}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 78f3ad8ef405fd84fa73306cd6f52049, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1605073233}
+  m_SourcePrefab: {fileID: 100100000, guid: 78f3ad8ef405fd84fa73306cd6f52049, type: 3}
 --- !u!1 &1330333379 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4599738171643778227, guid: 1b333001dbb584b4fb23bd87d74bc5a1, type: 3}
@@ -17636,7 +17652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1001 &1333575370
 PrefabInstance:
@@ -18176,7 +18192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &1374949560 stripped
 GameObject:
@@ -18567,7 +18583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &1397663674 stripped
 Transform:
@@ -18752,7 +18768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &1412147795 stripped
 Transform:
@@ -19013,7 +19029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &1427119357 stripped
 Transform:
@@ -19509,7 +19525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &1464581419 stripped
 Transform:
@@ -19760,7 +19776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &1476244474 stripped
 GameObject:
@@ -19828,7 +19844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &1476244478 stripped
 Transform:
@@ -20027,7 +20043,7 @@ Transform:
   m_GameObject: {fileID: 1488467904}
   serializedVersion: 2
   m_LocalRotation: {x: 0.00000047660177, y: 0.03141354, z: 0.00000001497914, w: 0.9995065}
-  m_LocalPosition: {x: -960.663, y: -539.67, z: 1.127}
+  m_LocalPosition: {x: -957.153, y: -539.673, z: 3.987}
   m_LocalScale: {x: 0.05338051, y: 0.05338051, z: 0.05338051}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20151,7 +20167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &1496120540 stripped
 Transform:
@@ -20237,7 +20253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.1
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &1519298044 stripped
 Transform:
@@ -20341,7 +20357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &1545974764
 GameObject:
@@ -20370,7 +20386,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1545974764}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.248}
+  m_LocalPosition: {x: 0, y: 0, z: 5.108}
   m_LocalScale: {x: 2.0133197, y: 1.8240097, z: 2.197902}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20378,7 +20394,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -960.0042, y: -538.9994}
+  m_AnchoredPosition: {x: -956.4942, y: -539.0024}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &1545974766
@@ -20590,7 +20606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &1546408668 stripped
 Transform:
@@ -20829,7 +20845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &1557236754 stripped
 Transform:
@@ -21185,7 +21201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &1603557006 stripped
 Transform:
@@ -21205,6 +21221,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointed: 0
+--- !u!1 &1605073232 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 78f3ad8ef405fd84fa73306cd6f52049, type: 3}
+  m_PrefabInstance: {fileID: 1322138840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1605073233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605073232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a1790d073bc14843858e4fa9d74c134, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsText: {fileID: 855211668}
+  pointsIncrease: 10
+--- !u!64 &1605073234
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605073232}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5076798556035486163, guid: 78f3ad8ef405fd84fa73306cd6f52049, type: 3}
 --- !u!1001 &1611909677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21388,7 +21445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1001 &1627922252
 PrefabInstance:
@@ -21631,7 +21688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &1655133245 stripped
 GameObject:
@@ -21717,7 +21774,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1001 &1662223122
 PrefabInstance:
@@ -21956,7 +22013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &1671795837 stripped
 GameObject:
@@ -22042,7 +22099,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.1
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1001 &1674874022
 PrefabInstance:
@@ -22209,7 +22266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &1678250323 stripped
 Transform:
@@ -22313,7 +22370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1001 &1700743876
 PrefabInstance:
@@ -22498,7 +22555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &1711785317 stripped
 GameObject:
@@ -22584,7 +22641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1001 &1722385597
 PrefabInstance:
@@ -22771,7 +22828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.1
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &1724666280 stripped
 GameObject:
@@ -22839,7 +22896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.1
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &1724666284 stripped
 Transform:
@@ -22925,7 +22982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &1736730692 stripped
 Transform:
@@ -23029,7 +23086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &1738482172 stripped
 GameObject:
@@ -23115,7 +23172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &1740222563 stripped
 GameObject:
@@ -23417,7 +23474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &1762713748 stripped
 GameObject:
@@ -23557,7 +23614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1001 &1787442321
 PrefabInstance:
@@ -23796,7 +23853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &1808765503 stripped
 GameObject:
@@ -23935,7 +23992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1001 &1826592167
 PrefabInstance:
@@ -24555,7 +24612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &1875619553 stripped
 GameObject:
@@ -24623,7 +24680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &1875619557 stripped
 Transform:
@@ -24761,7 +24818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &1901085638 stripped
 Transform:
@@ -25165,7 +25222,7 @@ Transform:
   m_GameObject: {fileID: 1937036287}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.00000058114523}
-  m_LocalPosition: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  m_LocalPosition: {x: 3.5240011, y: 0.16499998, z: 5.112}
   m_LocalScale: {x: 1.6999999, y: 0.14859, z: 1.6999999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25276,7 +25333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1 &1957305007 stripped
 GameObject:
@@ -25519,7 +25576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!1001 &2001947462
 PrefabInstance:
@@ -25773,140 +25830,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 556971430}
   m_SourcePrefab: {fileID: 100100000, guid: 1b333001dbb584b4fb23bd87d74bc5a1, type: 3}
---- !u!1 &2010639030
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2010639031}
-  - component: {fileID: 2010639033}
-  - component: {fileID: 2010639032}
-  m_Layer: 5
-  m_Name: HighScore
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2010639031
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2010639030}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.278}
-  m_LocalScale: {x: 0.0034778772, y: 0.0034778772, z: 0.0034778772}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 143295944}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -960.56274, y: -538.716}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2010639032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2010639030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Highscore
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &2010639033
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2010639030}
-  m_CullTransparentMesh: 1
 --- !u!1001 &2026562839
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26076,7 +25999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &2028784648 stripped
 Transform:
@@ -26287,7 +26210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &2052556776 stripped
 Transform:
@@ -26373,7 +26296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &2056766241 stripped
 Transform:
@@ -26789,6 +26712,81 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 567191119}
   m_SourcePrefab: {fileID: 100100000, guid: 1b333001dbb584b4fb23bd87d74bc5a1, type: 3}
+--- !u!1 &2107228914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2107228915}
+  - component: {fileID: 2107228917}
+  - component: {fileID: 2107228916}
+  m_Layer: 5
+  m_Name: FinaleScore
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2107228915
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107228914}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 4.138}
+  m_LocalScale: {x: 0.0005187219, y: 0.0005187219, z: 0.0005187219}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 143295944}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -955.99115, y: -538.6276}
+  m_SizeDelta: {x: 1816, y: 679}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2107228916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107228914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: cd0868936e466d1499bade7e5de0ca81, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2107228917
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107228914}
+  m_CullTransparentMesh: 1
 --- !u!1 &2113381862 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1b333001dbb584b4fb23bd87d74bc5a1, type: 3}
@@ -26855,7 +26853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.08
-  centerPoint: {x: 0.014001131, y: 0.16799998, z: 2.2519999}
+  centerPoint: {x: 3.5240011, y: 0.16499998, z: 5.112}
   bounceAngleChange: 1
 --- !u!4 &2113381866 stripped
 Transform:
@@ -27349,6 +27347,7 @@ SceneRoots:
   - {fileID: 1722385597}
   - {fileID: 2856468}
   - {fileID: 565064596}
+  - {fileID: 1322138840}
   - {fileID: 642195491}
   - {fileID: 2092139010}
   - {fileID: 143295944}
