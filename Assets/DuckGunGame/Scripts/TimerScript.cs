@@ -13,7 +13,7 @@ public class TimerScriptShooting : MonoBehaviour
     private bool isRunning = false;
 
     [SerializeField] private DGHighScoreKeeper highScoreScript;
-    [SerializeField] private BucketScript pointsManagerScript;
+    [SerializeField] private PointsManager pointsManagerScript;
 
     private void Start()
     {
