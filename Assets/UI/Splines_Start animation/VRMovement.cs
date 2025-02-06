@@ -19,6 +19,7 @@ public class VRMovement : MonoBehaviour
 
     [Header("Fade & Scene Transition")]
     public string nextSceneName = "NextScene"; // Scene to load
+    public CanvasGroup fadeCanvas;
 
     private bool movingToSpline = false;
     private bool followingSpline = false;
@@ -29,12 +30,12 @@ public class VRMovement : MonoBehaviour
     private Vector3 nearestPointOnSpline; // Stores nearest position on spline
     private Spline nearestSpline; // Stores reference to the nearest spline
 
-    /*
+    
     private void Start()
     {
         StartTransport();
     }
-    */
+    
 
     public void StartTransport()
     {
@@ -156,6 +157,7 @@ public class VRMovement : MonoBehaviour
 
         while (elapsedTime < fadeDuration)
         {
+            fadeCanvas.alpha = Mathf.Lerp(0, 1, elapsedTime / fadeDuration);
             elapsedTime += Time.deltaTime;
             yield return null;
         }

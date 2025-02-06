@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/UI/StartMenu.unity
+    path: Assets/StartMenu/StartMenu.unity
     guid: 09eea26d93fa94842808d70ca7960556
   - enabled: 1
     path: Assets/DuckFishing/DuckFishing.unity
