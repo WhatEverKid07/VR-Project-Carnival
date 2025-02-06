@@ -5464,8 +5464,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6d2c55be280a2546ad62e7ccb358d6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minutes: 0
-  seconds: 5
+  minutes: 2
+  seconds: 0
   timerText: {fileID: 725051175}
   endCanvas: {fileID: 915609804}
   highScoreScript: {fileID: 1067364005}
@@ -7017,6 +7017,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 63634460349bf6e4aa9bb8e05e0c1d5f, type: 3}
       propertyPath: m_Name
       value: Water Row 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63634460349bf6e4aa9bb8e05e0c1d5f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

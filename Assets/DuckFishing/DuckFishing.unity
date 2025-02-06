@@ -148,7 +148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 33099b2fae490814ca2f476185350a89, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.787
+      value: 0.6992
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 33099b2fae490814ca2f476185350a89, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11414,8 +11414,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b89d8526c6742624d8c1af04a6da1607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minutes: 0
-  seconds: 10
+  minutes: 2
+  seconds: 0
   timerText: {fileID: 745385924}
   endCanvas: {fileID: 143295940}
   highScoreScript: {fileID: 2102956297}
