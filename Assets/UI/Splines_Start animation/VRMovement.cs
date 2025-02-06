@@ -8,7 +8,7 @@ using Unity.Mathematics;
 public class VRMovement : MonoBehaviour
 {
     [Header("Spline & Player Settings")]
-    public SplineContainer spline; // Reference to the spline
+    public SplineContainer splineContainer; // Reference to the SplineContainer
     public Transform player; // Player transform (headset/camera root)
 
     [Header("Movement Settings")]
@@ -27,34 +27,61 @@ public class VRMovement : MonoBehaviour
     private Vector3 initialPosition;
     private Quaternion initialRotation;
     private Vector3 nearestPointOnSpline; // Stores nearest position on spline
+    private Spline nearestSpline; // Stores reference to the nearest spline
 
+    /*
     private void Start()
     {
         StartTransport();
     }
+    */
 
     public void StartTransport()
     {
-        Debug.Log("Check No1");
+        Debug.Log("Finding Nearest Spline...");
+
         // Null check to avoid crashes
-        if (spline == null || player == null)
+        if (splineContainer == null || player == null || splineContainer.Splines.Count == 0)
         {
-            Debug.LogError("Spline or Player is not assigned!");
+            Debug.LogError("SplineContainer or Player is not assigned, or there are no splines!");
             return;
         }
 
-        // Get reference to the first spline
-        Spline targetSpline = spline.Splines[0];
+        // Variables to track the closest spline and point
+        float closestDistance = float.MaxValue;
+        float nearestT = 0f;
+        float3 nearestFloat3 = float3.zero;
 
-        // Correctly find the nearest point on the spline
-        float3 nearestFloat3;
-        float nearestT;
-        SplineUtility.GetNearestPoint(targetSpline, (float3)player.position, out nearestFloat3, out nearestT);
+        // 🔍 Loop through all splines to find the closest one
+        foreach (Spline s in splineContainer.Splines)
+        {
+            float3 tempNearestPoint;
+            float tempT;
+            SplineUtility.GetNearestPoint(s, splineContainer.transform.InverseTransformPoint(player.position), out tempNearestPoint, out tempT); // Convert player position to local space
 
-        // Convert float3 back to Vector3 for Unity usage
-        nearestPointOnSpline = (Vector3)nearestFloat3;
+            // Convert tempNearestPoint to world space before calculating distance
+            Vector3 worldNearestPoint = splineContainer.transform.TransformPoint((Vector3)tempNearestPoint);
+            float distance = Vector3.Distance(player.position, worldNearestPoint);
 
-        //  Ensure Y-axis stays the same to prevent "falling to the floor"
+            if (distance < closestDistance)
+            {
+                closestDistance = distance;
+                nearestFloat3 = tempNearestPoint;
+                nearestT = tempT;
+                nearestSpline = s; // Store reference to the closest spline
+            }
+        }
+
+        if (nearestSpline == null)
+        {
+            Debug.LogError("No valid spline found!");
+            return;
+        }
+
+        // Convert nearest spline point to world space
+        nearestPointOnSpline = splineContainer.transform.TransformPoint((Vector3)nearestFloat3);
+
+        // 🔧 Ensure Y-axis stays the same to prevent "falling to the floor"
         nearestPointOnSpline.y = player.position.y;
 
         movingToSpline = true;
@@ -104,7 +131,7 @@ public class VRMovement : MonoBehaviour
 
     private void FollowSpline()
     {
-        t += (followSpeed / spline.Splines[0].GetLength()) * Time.deltaTime; // Normalised speed
+        t += (followSpeed / nearestSpline.GetLength()) * Time.deltaTime; // Normalised speed
         t = Mathf.Clamp01(t); // Ensure t stays within 0 - 1 range
 
         if (t >= 1f)
@@ -113,10 +140,11 @@ public class VRMovement : MonoBehaviour
         }
         else
         {
-            player.position = spline.EvaluatePosition(t);
+            // Convert spline position from local to world space
+            player.position = splineContainer.transform.TransformPoint(SplineUtility.EvaluatePosition(nearestSpline, t));
 
             // Rotate player along the spline direction smoothly
-            Quaternion splineRotation = Quaternion.LookRotation(spline.EvaluateTangent(t), Vector3.up);
+            Quaternion splineRotation = Quaternion.LookRotation(SplineUtility.EvaluateTangent(nearestSpline, t), Vector3.up);
             player.rotation = Quaternion.RotateTowards(player.rotation, splineRotation, rotationSpeed * Time.deltaTime * 100f);
         }
     }
