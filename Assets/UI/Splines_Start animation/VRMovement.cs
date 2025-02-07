@@ -30,12 +30,12 @@ public class VRMovement : MonoBehaviour
     private Vector3 nearestPointOnSpline; // Stores nearest position on spline
     private Spline nearestSpline; // Stores reference to the nearest spline
 
-    
+    /*
     private void Start()
     {
         StartTransport();
     }
-    
+    */
 
     public void StartTransport()
     {
